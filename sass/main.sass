@@ -1,0 +1,2320 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+  padding: 0px
+  margin: 0px
+  font-size: 25px
+
+body
+  width: 100vw
+  overflow-x: hidden
+.upTabs
+  height: 12.3%
+  width: 100%
+  background: $blue
+  background-image: url('../img/header/light.png')
+  position: fixed
+  z-index: 1000
+  background-size: cover
+  top: 0
+
+  .tabs
+    width: 100%
+    height: 100%
+    ul
+      display: flex
+      height: 100%
+      justify-content: flex-end
+      align-items: center
+      list-style: none
+      margin-right: 266px
+      letter-spacing: 3.2px
+      font-family: fantasy
+
+    li
+      margin-right: 97px
+      color: $lightBlue
+      padding: 2.3% 0
+      font-size: 36px
+      font-family: RobotoBold
+      position: relative
+      
+      &:hover:after
+        border-bottom: 10px solid #ff8d2e
+        margin-bottom: -10px
+        width: 100%
+        left: 0
+        position: absolute
+        bottom: 0
+        transition: .3s
+    
+      &:after
+        content: ''
+        display: block
+        left: 0
+        width: 0
+        position: absolute
+        bottom: 0
+        border-bottom: 10px solid #ff8d2e
+        margin-bottom: -10px
+        transition: .3s
+
+
+  .logo img
+    position: absolute
+    left: 9.9%
+    width: 8.5%
+    
+.progressBar
+  width: 0.2%
+  height: 45%
+  position: fixed
+  left: 2%
+  background: #5b6d88
+  top: 30%
+  z-index: 10
+  border-radius: 10px
+  padding-bottom: 2.3%
+  .fillBar
+    height: 10%
+    background: #b8d4f0
+    border-radius: 10px
+    position: relative
+  span
+    color: #8ba8b7
+    position: absolute
+    top: -9%
+    transform: rotate(-90deg)
+    text-align: center
+    left: -840%
+    font-family: RobotoRegular
+    font-size: 34px
+    width: 4em
+    letter-spacing: 1px
+  i
+    color: #ff8d2e
+    position: absolute
+    left: -200%
+    img
+      position: fixed
+      width: 1.1%
+      top: 22.9%
+      transition: .2s
+
+.yellowGears
+  width: 100%
+  height: 100%
+  background: #050409
+  display: flex
+  overflow: hidden
+  padding-top: 6%
+  
+  .imageGears
+   width: 65%
+   height: 100%
+   margin-top: -3%
+   margin-left: 1%
+  
+  .gearSite
+    display: flex
+    flex-direction: column
+
+  .topGear
+    color: #f5d958
+    font-size: 58.3px
+    margin: 9% 0 1% -7.7%
+    letter-spacing: 6.3px
+    font-family: RobotoRegular
+
+  .middleGear
+    color: #f5d958
+    margin: -3% 0% 0 -13%
+    font-family: LatoBlack
+    letter-spacing: 24px
+    width: 100%
+    img
+      width: 100%
+    
+  .bottomGear
+    color: #fff
+    font-size: 66px
+    width: 100%
+    margin: 4.2% 0 0 -6%
+    line-height: 78px
+    font-family: OswaldBold
+    letter-spacing: 7px
+    position: relative
+  
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      bottom: -4px
+      background: #ff8d2e
+      height: 4px
+      width: 0
+      left: 0
+      transition: width .2s
+    &:hover:after
+      content: ''
+      display: block
+      position: absolute
+      bottom: -4px
+      left: 0
+      width: 96%
+      background: #ff8d2e
+      transition: width .5s
+    
+.headerBottom
+  width: 100%
+  height: 100%
+  background: #020505
+  position: relative
+  
+  .lineUp
+    z-index: 1
+    position: absolute
+    left: 9.4%
+    top: -22.5%
+    width: 52%
+    max-height: 130%
+    
+  .tableHeader
+    width: 18%
+    background: #00c9ff
+    position: absolute
+    left: 72.6%
+    top: -3.8%
+    border-radius: 47px
+    color: white
+    z-index: 1
+
+    .about
+      font-size: 48px
+      height: 100%
+      width: 90%
+      display: flex
+      align-items: center
+      font-family: OswaldMedium
+      margin-left: 14px
+      letter-spacing: 6px
+      //border-bottom: 2px solid #00a4d8
+      justify-content: space-around
+      position: relative
+      &:after
+        content: ''
+        border-bottom: 2px solid #00a4d8
+        width: 85%
+        position: absolute
+        bottom: 0
+      
+      i
+        color: #ff8d2e
+        width: 14%
+
+    ul
+      margin-top: 57px
+      font-family: RobotoMedium
+      padding-bottom: 115px
+     
+      li
+        font-size: 36px
+        letter-spacing: 0.5px
+        list-style: none
+        margin-left: 121px
+        margin-top: 52px
+        display: inline-block
+        padding-right: 10px
+        transition: all .5s
+        &:hover
+          background: #ff8d2e
+          transform: scale(1.1)
+          border-radius: 10px
+        &:before
+          content: '\2022'
+          color: #ff8d2e
+          margin-right: 3px
+
+  .textHeadBottom
+    color: white
+    overflow: hidden
+
+    .text1
+      margin: 16% 0 0 13.1%
+      letter-spacing: 5.9px
+      font-family: RobotoRegular
+      h1
+        opacity: 0
+      span
+        font-size: 6vh
+        width: 100%
+        display: flex
+        justify-content: center
+        color: #ff8c28
+        position: absolute
+        left: -23.6vh
+        top: 30vh
+        
+
+      .blurOne
+        position: absolute
+        top: 6%
+        left: 0px
+        display: none
+        img
+          position: absolute
+          left: 0
+          top: -670px
+          width: 100vw
+
+      h1 div
+        font-size: 60px
+        line-height: 69px
+        font-family: sans-serif
+        filter: brightness(1)
+
+    .text2
+      margin: 16.4% 13% 0 0
+      letter-spacing: 5.5px
+      font-family: RobotoRegular
+      display: flex
+      justify-content: flex-end
+
+      h1
+        opacity: 0
+
+      span
+        font-size: 6vh
+        width: 100%
+        display: flex
+        justify-content: center
+        color: #ff8c28
+        position: absolute
+        left: -24vh
+        top: 30vh
+        position: absolute
+        left: 22vh
+        top: 90vh
+
+      .blurTwo
+        position: absolute
+        right: 0px
+        top: 22%
+        display: none
+        img
+          position: absolute
+          right: 0
+          top: -650px
+          width: 100vw
+
+      h1 div
+        font-size: 60px
+        line-height: 69px
+        font-family: sans-serif
+        filter: brightness(1)
+
+    .text3
+      margin: 13.6% 0 0 16.4%
+      letter-spacing: 5.9px
+      font-family: RobotoRegular
+
+      h1
+        opacity: 0
+
+      span
+        font-size: 6vh
+        width: 100%
+        display: flex
+        justify-content: center
+        color: #ff8c28
+        position: absolute
+        left: -24vh
+        top: 30vh
+        position: absolute
+        left: -9vh
+        top: 137vh
+
+      .blurThree
+        position: absolute
+        left: 0px
+        display: none
+        img
+          position: absolute
+          left: 0
+          top: -1000px
+          width: 100vw
+
+      h1 div
+        font-size: 60px
+        line-height: 69px
+        font-family: sans-serif
+        filter: brightness(1)
+
+    .text4
+      margin: 13.2% 11% 31% 0
+      display: flex
+      justify-content: flex-end
+      letter-spacing: 5px
+      font-family: RobotoRegular
+      
+
+      h1
+        opacity: 0
+
+      span
+        font-size: 6vh
+        width: 100%
+        display: flex
+        justify-content: center
+        color: #ff8c28
+        position: absolute
+        left: -24vh
+        position: absolute
+        left: 34.8vh
+        bottom: 71vh
+
+      .blurFour
+        position: absolute
+        right: 0px
+        display: none
+        img
+          position: absolute
+          right: 0
+          top: -1300px
+          width: 100vw
+
+      h1 
+        width: 57%
+        position: relative
+        top: 7vh
+        div
+          font-size: 60px
+          line-height: 69px
+          font-family: sans-serif
+          filter: brightness(1)
+          margin-top: 38px
+          
+@keyframes pulse
+  from
+    text-shadow: 0px 0px 15px black, 0px 0px 15px blue
+  to
+    text-shadow: 0px 0px 25px black, 0px 0px 25px blue
+    
+.moreDeeper
+  height: 100%
+  width: 100%
+  position: relative
+  background: $lightBlue
+  z-index: 1
+  padding-bottom: 1%
+  .textDeep
+    font-size: 200px
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    text-transform: uppercase
+    font-family: OswaldBold
+    letter-spacing: 20px
+    color: white
+    padding-top: 4.6%
+    transition: 1.55s
+  .arrowsDeeper
+    position: relative
+    display: flex
+    justify-content: center
+    transition: 1.55s
+    margin-top: -5%
+  i
+    color: #002cf8
+    font-size: 250px
+    opacity: 0
+    transition: 1.55s
+    
+#ar1
+  animation: pulse 1.5s linear infinite
+  @keyframes pulse
+    0%
+      text-shadow: 0px 0px 0 blue, 0px 0px 0 blue
+    10%
+      text-shadow: 0px 0px 1vh blue, 0px 0px 1vh blue
+    20%
+      text-shadow: 0px 0px 0 blue, 0px 0px 0 blue
+    100%
+      text-shadow: 0px 0px 0 blue, 0px 0px 0 blue
+
+  @keyframes pulseTwo
+    0%
+      text-shadow: 0px 0px 0 #0ff, 0px 0px 0 #0ff
+    10%
+      text-shadow: 0px 0px 1vh #0ff, 0px 0px 1vh #0ff
+    20%
+      text-shadow: 0px 0px 0 #0ff, 0px 0px 0 #0ff
+    100%
+      text-shadow: 0px 0px 0 #0ff, 0px 0px 0 #0ff
+    
+#ar2
+  animation: pulse 1.5s 0.2s linear infinite
+#ar3
+  animation: pulse 1.5s 0.5s linear infinite
+
+.sectionMiddle
+  width: 100%
+  height: 100%
+  background: #000125
+  overflow: hidden
+  position: relative
+  
+  .secline1
+    position: absolute
+    top: 0px
+    right: 6%
+    width: 64.6%
+    
+  .secline2
+    position: absolute
+    top: 70.3%
+    left: 2.7%
+    width: 52.5%
+
+  .secline3
+    position: absolute
+    top: 92.8%
+    right: 6%
+    width: 22.6%
+  .ourInfo
+    
+    .info
+      position: relative
+      transition: .1s
+    .lorem
+      width: 29%
+      font-size: 60px
+      text-transform: uppercase
+      color: #fa8d2f
+      margin: 12.8% 0 0 9.1%
+      line-height: 73px
+      font-family: RobotoBold
+      letter-spacing: 5.6px
+      
+    .services
+      width: 26%
+      margin: 4.2% 0 0 9%
+      line-height: 73px
+      font-family: RobotoBold
+  
+    h1
+      color: #ffd600
+      font-size: 48px
+      font-family: RobotoBold
+      letter-spacing: 4.6px
+  
+    .mobile
+      width: 74%
+      height: 25%
+      display: flex
+      justify-content: center
+      flex-direction: column
+      transition: all 0.7s
+      padding: 4% 5%
+      background: #0077e7
+      transition: all 0.7s
+      
+      div
+        font-size: 30px
+        color: #ffc852
+        width: 84%
+        line-height: 39px
+        margin: 0.9% 0 0 0
+        letter-spacing: 3.4px
+        
+      &:hover
+        background: #0077e7!important
+        transition: all 0.7s
+        padding: 4% 5%!important
+      
+    .web
+      margin-top: 6%
+      width: 60%
+      display: flex
+      justify-content: center
+      flex-direction: column
+      transition: all 0.7s
+      padding: 4% 0%
+      
+      div
+        font-size: 30px
+        color: #ffc852
+        width: 100%
+        line-height: 39px
+        margin: 0.9% 0 0 0
+        letter-spacing: 3.4px
+        
+      &:hover
+        background: #0077e7!important
+        transition: all 0.7s
+        padding: 4% 5%!important
+        
+    .design
+      margin-top: 6%
+      width: 60%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      transition: all 0.7s
+      padding: 4% 0%
+      
+      div
+        font-size: 30px
+        color: #ffc852
+        width: 100%
+        line-height: 39px
+        margin: 0.9% 0 0 0
+        letter-spacing: 3.6px
+      
+      &:hover
+        background: #0077e7!important
+        transition: all 0.7s
+        padding: 4% 5%!important
+    
+  .ourProject
+    position: absolute
+    right: 7%
+    top: 18%
+    width: 62%
+    height: 50%
+    transition: .1s
+
+    .designDevelopment
+      display: flex
+      flex-wrap: wrap
+      width: 100%
+      transform: translateX(16%) translateY(-50%) rotateX(40deg) rotateZ(-45deg)
+      transform-style: preserve-3d
+      height: 250%
+      position: relative
+      overflow: overlay
+      padding-right: 100%
+      padding-left: 3%
+      display: none
+      #design1
+        position: absolute
+        top: 19%
+        left: 13%
+        width: 58%
+      #design2
+        position: absolute
+        top: 47%
+        left: 10%
+        width: 47%
+        z-index: 1
+        transform: rotate(90deg)
+      #design3
+        position: absolute
+        top: 32%
+        left: 35%
+        width: 39%
+      #design4
+        position: absolute
+        top: 46%
+        left: 30%
+        width: 45%
+        padding-bottom: 90%
+      #design5
+        position: absolute
+        top: 68%
+        left: 1%
+        width: 55%
+        z-index: 1
+        transform: rotate(90deg)
+      #design6
+        position: absolute
+        top: 54%
+        left: 3%
+        width: 85%
+        padding-bottom: 90%
+      li
+        width: 100%
+        list-style: none
+        transform: translate3d(0px, 0px, 0px)
+        transition: 0.3s
+        &:hover
+          z-index: 3
+          img
+            &:nth-child(1)
+            transform: translate(0%,-12%) rotate(0deg)
+            opacity: 1
+            &:nth-child(2)
+              transform: translate(0%,-9%) rotate(-20deg)
+              opacity: .8
+            &:nth-child(3)
+              transform: translate(0%,-6%) rotate(10deg)
+              opacity: .6
+            &:nth-child(4)
+              transform: translate(0%,-3%) rotate(-10deg)
+              opacity: .4
+        
+      img
+          width: 50%
+          transition: .4s
+          position: absolute
+          box-shadow: 3px -2px 20px 0px #00000059
+          &:nth-child(1)
+            z-index: 5
+          &:nth-child(1)
+            z-index: 5
+          &:nth-child(2)
+            opacity: 0
+          &:nth-child(3)
+            opacity: 0
+          &:nth-child(4)
+            opacity: 0
+    
+    .webDevelopment
+      display: flex
+      flex-wrap: wrap
+      width: 100%
+      transform: translateX(16%) translateY(-52%) rotateX(40deg) rotateZ(-45deg)
+      transform-style: preserve-3d
+      height: 250%
+      position: relative
+      overflow: overlay
+      padding-right: 100%
+      padding-left: 3%
+      display: none
+
+      #web1
+        position: absolute
+        top: 19%
+        left: 13%
+        width: 58%
+      #web2
+        position: absolute
+        top: 47%
+        left: 10%
+        width: 47%
+        z-index: 1
+        transform: rotate(90deg)
+      #web3
+        position: absolute
+        top: 32%
+        left: 35%
+        width: 39%
+      #web4
+        position: absolute
+        top: 38%
+        left: 30%
+        width: 35%
+      #web5
+        position: absolute
+        top: 43%
+        left: 2%
+        width: 45%
+      #web6
+        position: absolute
+        top: 54%
+        left: 3%
+        width: 85%
+        padding-bottom: 90%
+      #web7
+        position: absolute
+        top: 58%
+        left: 30%
+        width: 15%
+        padding-bottom: 90%
+      #web8
+        position: absolute
+        top: 68%
+        left: 0%
+        width: 27%
+      #web9
+        position: absolute
+        top: 48%
+        left: 6%
+        width: 18%
+
+      li
+        width: 70%
+        list-style: none
+        transform: translate3d(0px, 0px, 0px)
+        &:hover
+          z-index: 3
+          img
+            &:nth-child(1)
+            transform: translate(0%,-12%) rotate(0deg)
+            opacity: 1
+            &:nth-child(2)
+              transform: translate(0%,-9%) rotate(-20deg)
+              opacity: .8
+            &:nth-child(3)
+              transform: translate(0%,-6%) rotate(10deg)
+              opacity: .6
+            &:nth-child(4)
+              transform: translate(0%,-3%) rotate(-10deg)
+              opacity: .4
+        
+      img
+          width: 50%
+          transition: .4s
+          position: absolute
+          box-shadow: 3px -2px 20px 0px #00000059
+          &:nth-child(1)
+            z-index: 5
+          &:nth-child(1)
+            z-index: 5
+          &:nth-child(2)
+            opacity: 0
+          &:nth-child(3)
+            opacity: 0
+          &:nth-child(4)
+            opacity: 0
+  
+    .ourSite
+      display: flex
+      flex-wrap: wrap
+      width: 100%
+      transform: translateX(16%) translateY(-48%) rotateX(40deg) rotateZ(-45deg)
+      transform-style: preserve-3d
+      height: 250%
+      position: relative
+      overflow: overlay
+      padding-right: 100%
+      padding-left: 3%
+
+      #itsSlide1
+        position: absolute
+        top: 21%
+        left: 21%
+        width: 20%
+      #itsSlide2
+        position: absolute
+        top: 24%
+        left: 42%
+        width: 17%
+        z-index: 1
+      #itsSlide3
+        position: absolute
+        top: 18%
+        left: 33%
+        width: 20%
+      #itsSlide4
+        position: absolute
+        top: 31%
+        left: 13%
+        width: 20%
+      #itsSlide5
+        position: absolute
+        top: 34%
+        left: 30%
+        width: 25%
+      #itsSlide6
+        position: absolute
+        top: 40%
+        left: 21%
+        width: 20%
+      #itsSlide7
+        position: absolute
+        top: 48%
+        left: 39%
+        width: 20%
+        padding-bottom: 90%
+      #itsSlide8
+        position: absolute
+        top: 52%
+        left: 0%
+        width: 27%
+      #itsSlide9
+        position: absolute
+        top: 43%
+        left: 6%
+        width: 18%
+         
+      li
+        width: 30%
+        list-style: none
+        transform: translate3d(0px, 0px, 0px)
+        transition: 0.3s
+        
+        &:hover
+          z-index: 3
+          img
+            &:nth-child(1)
+            transform: translate(0%,-12%) rotate(0deg)
+            opacity: 1
+            &:nth-child(2)
+              transform: translate(0%,-9%) rotate(-20deg)
+              opacity: .8
+            &:nth-child(3)
+              transform: translate(0%,-6%) rotate(10deg)
+              opacity: .6
+            &:nth-child(4)
+              transform: translate(0%,-3%) rotate(-10deg)
+              opacity: .4
+        
+        img
+          width: 50%
+          transition: .4s
+          position: absolute
+          box-shadow: 0px -10px 2vh 1vh #00000080
+          border-radius: 3%
+          &:nth-child(1)
+            z-index: 5
+          &:nth-child(2)
+            opacity: 0
+          &:nth-child(3)
+            opacity: 0
+          &:nth-child(4)
+            opacity: 0
+      
+      
+  .sideScreen
+    margin: 41% 0 0 10.8%
+    line-height: 81px
+
+    .blurSideScreen
+      width: 35%
+      height: 7.5%
+      background: #fd8c2e
+      position: absolute
+      filter: blur(3vh) brightness(0.9)
+      top: 65%
+      border-radius: 300px
+      left: 8.2%
+      display: none
+
+    div
+      font-size: 60px
+      color: white
+      font-family: RobotoBold
+      letter-spacing: 6.3px
+      font-weight: bold
+      filter: blur(0px)
+
+    h1
+      font-size: 95px
+      color: white
+      font-family: RobotoBlack
+      margin-left: 10px
+      letter-spacing: 10.6px
+      filter: blur(0px)
+      margin: 0px
+  
+  
+  .openWebModal
+    width: 100%
+    height: 100%
+    background: #000000b8
+    position: fixed
+    z-index: 1000
+    top: 0
+    display: none
+
+    .closeTab i
+      position: absolute
+      right: 9%
+      font-size: 8.6vh
+      color: #00d2ff
+      z-index: 2000
+      top: 1.4%
+      transition: .5s
+      &:hover
+        text-shadow: 0 0 1vh #00d2ff
+    
+    #modalLeftTwo
+      width: 1.5%
+      z-index: 2000
+      color: #00d2ff
+      position: absolute
+      left: 7%
+      font-size: 11vh
+      transition: .5s
+      &:hover
+        text-shadow: 0 0 2vh #00d2ff
+
+    #modalRightTwo
+      width: 1.5%
+      z-index: 2000
+      color: #00d2ff
+      transform: rotate(180deg)
+      position: absolute
+      right: 7%
+      font-size: 11vh
+      transition: .5s
+
+      &:hover
+        text-shadow: 0 0 2vh #00d2ff
+      
+    span
+      font-size: 200px
+      color: #fff
+      width: 100%
+      height: 100%
+      position: absolute
+      display: flex
+      top: 0
+      align-items: center
+      i
+        z-index: 500
+        font-size: 15vh
+
+    .modalWebImage
+      width: 55%
+      height: 100%
+      margin: auto
+      border-radius: 40px
+      display: flex
+      align-items: center
+      li
+        list-style: none
+        width: 100%
+        overflow: hidden
+        perspective: 1000px
+        user-select: none
+        
+        &:nth-child(1)
+          box-shadow: 0 0 3vh #00a9fb
+          background: #000032
+          padding: 1%
+          &::before
+            content: ""
+            position: absolute
+            top: 1.4%
+            bottom: 1.6%
+            left: 1%
+            right: 1%
+            border-radius: 1%
+            box-shadow: inset 0 0 40px 5px #b4dbef
+            z-index: 123
+          
+        div
+          display: flex
+          width: 400%
+          height: 100%
+          position: relative
+          left: 0%
+          transform-style: preserve-3d
+          
+          .rob
+            width: 25%
+            left: 0
+            height: 100%
+            z-index: 10
+            transition: .5s
+            display: block
+            
+            
+          img
+            width: 25%
+            left: 0
+            height: 100%
+            z-index: 10
+            display: none
+            transition: .5s
+            border-radius: 1%!important
+
+  .openModal
+    width: 100%
+    height: 100%
+    background: #000000b8
+    position: fixed
+    z-index: 1000
+    top: 0
+    display: none
+    .closeTab i
+      position: absolute
+      right: 33.2%
+      font-size: 8vh
+      color: #00d2ff
+      z-index: 2000
+      top: 1.4%
+      transition: .5s
+      &:hover
+        text-shadow: 0 0 1vh #00d2ff
+    
+    #modalLeft
+      width: 1.5%
+      z-index: 2000
+      color: #00d2ff
+      position: absolute
+      left: 25%
+      font-size: 11vh
+      transition: .5s
+      &:hover
+        text-shadow: 0 0 2vh #00d2ff
+    #modalRight
+      width: 1.5%
+      z-index: 2000
+      color: #00d2ff
+      transform: rotate(180deg)
+      position: absolute
+      right: 25%
+      font-size: 11vh
+      transition: .5s
+
+      &:hover
+        text-shadow: 0 0 2vh #00d2ff
+      
+    span
+      width: 100%
+      height: 100%
+      position: absolute
+      display: flex
+      top: 0
+      align-items: center
+      i
+        z-index: 500
+
+    .modalImage
+      width: 23%
+      height: 100%
+      margin: auto
+      display: flex
+      align-items: center
+      border-radius: 40px
+      
+      li
+        list-style: none
+        width: 100%
+        overflow: hidden
+        perspective: 1000px
+        user-select: none
+        
+        &:nth-child(1)
+          box-shadow: 0 0 3vh #00a9fb
+          background: #000032
+          padding: 2%
+          &::before
+            content: ""
+            position: absolute
+            top: 1%
+            bottom: 1%
+            left: 1.9%
+            right: 2%
+            border-radius: 1%
+            box-shadow: inset 0 0 40px 5px #b4dbef
+            z-index: 123
+          
+        div
+          display: flex
+          width: 400%
+          height: 100%
+          position: relative
+          left: 0%
+          transform-style: preserve-3d
+          
+          .rob
+            width: 25%
+            left: 0
+            height: 100%
+            z-index: 10
+            transition: .7s
+            display: block
+            
+            
+          img
+            width: 25%
+            left: 0
+            height: 100%
+            z-index: 10
+            display: none
+            transition: .7s
+            border-radius: 1%!important
+            
+
+            
+
+  .openDesignModal
+    width: 100%
+    height: 100%
+    background: #000000b8
+    position: fixed
+    z-index: 1000
+    top: 0
+    display: none
+    .closeTab i
+      position: absolute
+      right: 9%
+      font-size: 8.6vh
+      color: #00d2ff
+      z-index: 2000
+      top: 1.4%
+      transition: .5s
+      &:hover
+        text-shadow: 0 0 1vh #00d2ff
+    
+    #modalLeftThree
+      width: 1.5%
+      z-index: 2000
+      color: #00d2ff
+      position: absolute
+      left: 7%
+      font-size: 11vh
+      transition: .5s
+      &:hover
+        text-shadow: 0 0 2vh #00d2ff
+
+    #modalRightThree
+      width: 1.5%
+      z-index: 2000
+      color: #00d2ff
+      transform: rotate(180deg)
+      position: absolute
+      right: 7%
+      font-size: 11vh
+      transition: .5s
+
+      &:hover
+        text-shadow: 0 0 2vh #00d2ff
+      
+    span
+      font-size: 200px
+      color: #fff
+      width: 100%
+      height: 100%
+      position: absolute
+      display: flex
+      top: 0
+      align-items: center
+      i
+        z-index: 500
+        font-size: 15vh
+
+    .modalDesignImage
+      width: 55%
+      height: 100%
+      margin: auto
+      border-radius: 40px
+      display: flex
+      align-items: center
+      li
+        list-style: none
+        width: 100%
+        overflow: hidden
+        perspective: 1000px
+        user-select: none
+        
+        &:nth-child(1)
+          box-shadow: 0 0 3vh #00a9fb
+          background: #000032
+          padding: 1%
+          &::before
+            content: ""
+            position: absolute
+            top: 1.4%
+            bottom: 1.6%
+            left: 1%
+            right: 1%
+            border-radius: 1%
+            box-shadow: inset 0 0 40px 5px #b4dbef
+            z-index: 123
+          
+        div
+          display: flex
+          width: 400%
+          height: 100%
+          position: relative
+          left: 0%
+          transform-style: preserve-3d
+          
+          .rob
+            width: 25%
+            left: 0
+            height: 100%
+            z-index: 10
+            transition: .5s
+            display: block
+            
+            
+          img
+            width: 25%
+            left: 0
+            height: 100%
+            z-index: 10
+            display: none
+            transition: .5s
+            border-radius: 1%!important     
+    
+  .canYouTrust
+    margin: 23% 0 8.4% 55.5%
+    line-height: 109px
+
+    .blurTrust
+      width: 35.5%
+      height: 7.5%
+      background: #e0af3b
+      position: absolute
+      filter: blur(3vh) brightness(0.9)
+      bottom: 5.2%
+      border-radius: 300px
+      right: 11.6%
+      display: none
+
+    .trustOne
+      font-size: 95px
+      color: white
+      font-family: RobotoBold
+      filter: blur(0px)
+      transform: scaleY(1.3)
+
+    .trustTwo
+      font-size: 95px
+      color: white
+      letter-spacing: 10px
+      margin-left: 19px
+      font-family: RobotoBlack
+      filter: blur(0px)
+
+.hereWe
+  width: 100%
+  height: 100%
+  position: relative
+  background: #00ffff
+  padding-bottom: 1%
+  
+  .weText
+    font-size: 200px
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: OswaldBold
+    letter-spacing: 20px
+    color: white
+    padding-top: 4.5%
+  .hereArrows
+    position: relative
+    display: flex
+    justify-content: center
+    margin-top: -5%
+    transition: 1.5s
+  i
+    color: #002cf8
+    font-size: 250px
+    opacity: 0
+    transition: 1.5s
+    
+.sectionBottom
+  width: 100%
+  height: 100%
+  background: #000125
+  overflow: hidden
+  position: relative
+    
+  .people
+    position: absolute
+    left: 31.2%
+    width: 37.2%
+    max-height: 91.2%
+    filter: grayscale(1)
+    opacity: .5
+    transition: 1.5s
+    user-select: none
+  .people2
+    position: absolute
+    left: 10%
+    top: 1.4%
+    width: 77.7%
+    max-height: 76.8%
+    filter: grayscale(1)
+    opacity: .5
+    transition: 1.5s
+    user-select: none
+  .alex
+    position: absolute
+    top: 6.2%
+    left: 41.9%
+    width: 16.3%
+    
+  .vlad
+    position: absolute
+    top: 20.3%
+    left: 23.5%
+    width: 14.3%
+
+  .sergei
+    position: absolute
+    top: 26.3%
+    right: 23.1%
+    width: 14%
+
+  .danil
+    position: absolute
+    top: 30.5%
+    left: 20.2%
+    width: 14%
+
+  .max
+    position: absolute
+    top: 38.8%
+    right: 28.1%
+    width: 14%
+
+  .sergeiK
+    position: absolute
+    top: 47%
+    left: 25.3%
+    width: 14%
+
+  .oksana
+    position: absolute
+    top: 51.3%
+    right: 23%
+    width: 14%
+
+  .vyacheslav
+    position: absolute
+    top: 60.5%
+    left: 23%
+    width: 14%
+
+  .vasiliy
+    position: absolute
+    top: 76.9%
+    left: 22%
+    width: 14%
+
+  .olena
+    position: absolute
+    bottom: 23.6%
+    right: 23.8%
+    width: 14%
+
+  .alexScerbina
+    text-align: center
+    margin: 6.3% 0 0 61.3%
+    line-height: 62px
+    width: 12.8%
+
+    .alexName
+      font-size: 48px
+      padding: 8.3% 0
+      display: flex
+      align-items: center
+      justify-content: center
+      font-family: RobotoRegular
+      background: $lightBlue
+      border-radius: 60px
+      filter: blur(0px)
+      letter-spacing: 4px
+      transition: 1s
+
+
+    .alexCeo
+      font-size: 60px
+      width: 46%
+      padding: 1.9% 0
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: -7% 0 0 27%
+      opacity: 0
+      background: $lightBlue
+      border-radius: 40px
+      filter: blur(0px)
+      font-family: RobotoBlack
+      box-shadow: 0px 0px 3vh $lightBlue
+      transition: 1s
+
+  .vladislavKarpenko
+    margin: 19.2% 0 0 7%
+    line-height: 48px
+    width: 14%
+
+    .vladName
+      font-size: 48px
+      padding: 7.1% 0
+      display: flex
+      align-items: center
+      justify-content: center
+      background: $lightBlue
+      border-radius: 60px
+      font-family: RobotoRegular
+      filter: blur(0px)
+      letter-spacing: 1px
+      transition: 1s
+
+    .vladCeo
+      font-size: 51px
+      width: 65%
+      display: flex
+      align-items: center
+      margin: -1.5% 0 0 16.7%
+      opacity: 0
+      background: $lightBlue
+      filter: blur(0px)
+      text-align: center
+      letter-spacing: 4px
+      padding-bottom: 5.3%
+      border-radius: 0px 0px 70px 70px
+      font-family: RobotoBlack
+      box-shadow: 0px 0px 3vh $lightBlue
+      transition: 1s
+
+  .sergeiBondarenko
+    margin: 3.8% 0 0 80.2%
+    line-height: 48px
+    width: 14%
+
+    .sergName
+      font-size: 48px
+      padding: 6.9% 0
+      display: flex
+      align-items: center
+      justify-content: center
+      background: $lightBlue
+      border-radius: 47px
+      font-family: RobotoRegular
+      filter: blur(0px)
+      transition: 1s
+
+    .sergCeo
+      font-size: 48px
+      width: 65%
+      display: flex
+      align-items: center
+      margin: -3.4% 0 0 17.2%
+      opacity: 0
+      transition: 1s
+      background: $lightBlue
+      filter: blur(0px)
+      text-align: center
+      letter-spacing: 7px
+      padding-bottom: 5.3%
+      border-radius: 0px 0px 70px 70px
+      font-family: RobotoBlack
+      box-shadow: 0px 0px 3vh $lightBlue
+
+  .danilPirozkov
+    margin: 0.9% 0 0 3.5%
+    line-height: 48px
+    width: 14%
+
+    .danName
+      font-size: 48px
+      padding: 6.9% 0
+      display: flex
+      align-items: center
+      justify-content: center
+      background: $lightBlue
+      border-radius: 65px
+      font-family: RobotoRegular
+      filter: blur(0px)
+      letter-spacing: 2px
+      transition: 1s
+
+    .danCeo
+      font-size: 51px
+      width: 65%
+      display: flex
+      align-items: center
+      margin: -3.8% 0 0 17.2%
+      opacity: 0
+      transition: 1s
+      background: $lightBlue
+      filter: blur(0px)
+      text-align: center
+      letter-spacing: 4px
+      padding-bottom: 7%
+      border-radius: 0px 0px 70px 70px
+      font-family: RobotoBlack
+      box-shadow: 0px 0px 3vh $lightBlue
+
+  .maxDiachkov
+    margin: 7.9% 0 0 75%
+    line-height: 48px
+    width: 14%
+
+    .maxName
+      font-size: 48px
+      padding: 7.4% 0
+      display: flex
+      align-items: center
+      justify-content: center
+      background: $lightBlue
+      border-radius: 65px
+      font-family: RobotoRegular
+      filter: blur(0px)
+      letter-spacing: 2px
+      transition: 1s
+
+    .maxCeo
+      font-size: 51px
+      width: 65%
+      display: flex
+      align-items: center
+      margin: -3.4% 0 0 17.2%
+      opacity: 0
+      transition: 1s
+      background: $lightBlue
+      filter: blur(0px)
+      text-align: center
+      letter-spacing: 4px
+      padding-bottom: 5%
+      border-radius: 0px 0px 70px 70px
+      font-family: RobotoBlack
+      box-shadow: 0px 0px 3vh $lightBlue
+      
+  .sergeyKardash
+    margin: 7.5% 0 0 7.5%
+    line-height: 48px
+    width: 14%
+
+    .kardName
+      font-size: 48px
+      padding: 6.9% 0
+      display: flex
+      align-items: center
+      justify-content: center
+      background: $lightBlue
+      border-radius: 65px
+      font-family: RobotoRegular
+      filter: blur(0px)
+      letter-spacing: 2px
+      transition: 1s
+
+    .kardCeo
+      font-size: 51px
+      width: 65%
+      display: flex
+      align-items: center
+      margin: -3.8% 0 0 17.2%
+      opacity: 0
+      transition: 1s
+      background: $lightBlue
+      filter: blur(0px)
+      text-align: center
+      letter-spacing: 4px
+      padding-bottom: 7%
+      border-radius: 0px 0px 70px 70px
+      font-family: RobotoBlack
+      box-shadow: 0px 0px 3vh $lightBlue
+
+  .oksanaSelivanova
+    margin: 1.2% 0 0 80.2%
+    line-height: 48px
+    width: 14%
+
+    .oksName
+      font-size: 48px
+      padding: 7.4% 0
+      display: flex
+      align-items: center
+      justify-content: center
+      background: $lightBlue
+      border-radius: 65px
+      font-family: RobotoRegular
+      filter: blur(0px)
+      letter-spacing: 2px
+      transition: 1s
+
+    .oksCeo
+      font-size: 51px
+      width: 65%
+      display: flex
+      align-items: center
+      margin: -3.4% 0 0 17.2%
+      opacity: 0
+      transition: 1s
+      background: $lightBlue
+      filter: blur(0px)
+      text-align: center
+      letter-spacing: 4px
+      padding-bottom: 5%
+      border-radius: 0px 0px 70px 70px
+      font-family: RobotoBlack
+      box-shadow: 0px 0px 3vh $lightBlue
+      
+  .vyacheslavrud
+    margin: 10% 0 0 4.9%
+    line-height: 48px
+    width: 14%
+    
+    .vyachName
+      font-size: 48px
+      padding: 6.9% 0
+      display: flex
+      align-items: center
+      justify-content: center
+      background: $lightBlue
+      border-radius: 65px
+      font-family: RobotoRegular
+      filter: blur(0px)
+      letter-spacing: 2px
+      transition: 1s
+
+    .vyachCeo
+      font-size: 51px
+      width: 65%
+      display: flex
+      align-items: center
+      margin: -3.8% 0 0 17.2%
+      opacity: 0
+      transition: 1s
+      background: $lightBlue
+      filter: blur(0px)
+      text-align: center
+      letter-spacing: 4px
+      padding-bottom: 7%
+      border-radius: 0px 0px 70px 70px
+      font-family: RobotoBlack
+      box-shadow: 0px 0px 3vh $lightBlue
+
+  .vasiliyChechikov
+    margin: 8.7% 0 0 4.1%
+    line-height: 48px
+    width: 14%
+
+    .vasName
+      font-size: 48px
+      padding: 6.9% 0
+      display: flex
+      align-items: center
+      justify-content: center
+      background: $lightBlue
+      border-radius: 65px
+      font-family: RobotoRegular
+      filter: blur(0px)
+      letter-spacing: 2px
+      transition: 1s
+
+    .vasCeo
+      font-size: 51px
+      width: 65%
+      display: flex
+      align-items: center
+      margin: -3.8% 0 0 17.2%
+      opacity: 0
+      transition: 1s
+      background: $lightBlue
+      filter: blur(0px)
+      text-align: center
+      letter-spacing: 4px
+      padding-bottom: 7%
+      border-radius: 0px 0px 70px 70px
+      font-family: RobotoBlack
+      box-shadow: 0px 0px 3vh $lightBlue
+
+  .olenaDubochinskaya
+    margin: 5.5% 0 0 80.2%
+    line-height: 48px
+    width: 14%
+
+    .olenName
+      font-size: 48px
+      padding: 7.4% 0
+      display: flex
+      align-items: center
+      justify-content: center
+      background: $lightBlue
+      border-radius: 65px
+      font-family: RobotoRegular
+      filter: blur(0px)
+      letter-spacing: 2px
+      transition: 1s
+
+    .olenCeo
+      font-size: 51px
+      width: 65%
+      display: flex
+      align-items: center
+      margin: -3.4% 0 0 17.2%
+      opacity: 0
+      transition: 1s
+      background: $lightBlue
+      filter: blur(0px)
+      text-align: center
+      letter-spacing: 4px
+      padding-bottom: 5%
+      border-radius: 0px 0px 70px 70px
+      font-family: RobotoBlack
+      box-shadow: 0px 0px 3vh $lightBlue
+
+  .letsgoDeeper
+    font-size: 100px
+    color: $lightBlue
+    font-family: OswaldBold
+    text-transform: uppercase
+    margin: 19.6% 0 12.7% 21.8%
+    letter-spacing: 9.9px
+    transition: 1s
+  
+  .blurDeeper
+    position: absolute
+    top: 92%
+    opacity: 1
+    left: 48%
+    width: 4vw
+    background: #006ed6
+    height: 9vh
+    filter: blur(5vh)
+    display: none
+
+  i
+    color: $lightBlue
+    position: absolute
+    top: 89%
+    opacity: 0
+    left: 47.4%
+    font-size: 310px
+    transition: 1s
+    z-index: 1
+    &:nth-child(2)
+      top: 88%
+      opacity: 0
+      animation: pulseTwo 1.2s infinite
+    &:nth-child(3)
+      animation: pulseTwo 1.2s 0.3s infinite
+
+footer
+  position: relative
+
+.lineend
+  position: absolute
+  top: -4.9%
+  left: 41.6%
+  z-index: 1
+  width: 8.5%
+
+.footerTop
+  width: 100%
+  height: 100%
+  position: relative
+  background: #460089
+  overflow: hidden
+  padding-bottom: 30.4%
+  
+  .linefoot
+    position: absolute
+    bottom: -6.3%
+    right: 22.7%
+    width: 23.7%
+  
+  .technologies
+    font-size: 112.25px
+    color: #ffa904
+    margin: 13.7% 0 0 3.7%
+    font-family: OswaldBold
+    letter-spacing: 11.7px
+    
+
+  .techText
+    font-size: 52.82px
+    color: #fff
+    width: 35%
+    padding: 0.8% 0 5.9% 2.1%
+    margin: 3% 0 0 3.8%
+    font-family: RobotoRegular
+    line-height: 81px
+    letter-spacing: 5.8px
+    background: #0077e7
+
+  .ourTech
+    position: absolute
+    top: 7%
+    right: 0px
+    z-index: 2
+    width: 50%
+    height: 70%
+    .ourTechnologic
+      display: flex
+      flex-wrap: wrap
+      width: 100%
+      transform: translateX(-8%) translateY(-44%) rotateX(45deg) rotateZ(-45deg) scaleY(1.2)
+      transform-style: preserve-3d
+      height: 200%
+      position: relative
+      overflow: overlay
+      padding-right: 80%
+      padding-left: 6%
+      
+        
+      .itsS
+        width: 84%
+        font-size: 120px
+        text-align: center
+        color: #ffd600
+        font-family: RobotoBold
+        margin-bottom: 1%
+      li
+        width: 28%
+        height: 29%
+        list-style: none
+        transform: translate3d(0px, 0px, 0px)
+        transition: 0.3s
+        margin-top: 2%
+        &:nth-child(1)
+          position: absolute
+          top: 30%
+          left: 13%
+          width: 30%
+          z-index: 1
+        &:nth-child(2)
+          position: absolute
+          top: 29%
+          left: 30%
+          width: 20%
+          transform: rotate(90deg)
+        &:nth-child(3)
+          position: absolute
+          top: 53%
+          left: 8%
+          width: 19%
+
+        &:nth-child(4)
+            position: absolute
+            top: 92%
+            left: 26%
+            z-index: 1
+            transform: rotate(90deg)
+            width: 23%
+        &:nth-child(5)
+          position: absolute
+          width: 19%
+          top: 24%
+          left: 25%
+          transform: scaleX(1.5)
+          z-index: 1
+        &:nth-child(6)
+          position: absolute
+          top: 14%
+          width: 17%
+          left: -3%
+          transform: rotate(90deg)
+          z-index: 1  
+        &:nth-child(7)
+          position: absolute
+          top: 82%
+          z-index: 2
+          width: 16%
+          left: 41%
+        &:nth-child(8)
+          position: absolute
+          top: 105%
+          left: 12%
+          width: 18%
+          z-index: 2
+          transform: rotate(90deg)
+        &:nth-child(9)
+          position: absolute
+          left: 27%
+          width: 21%
+          top: 104%
+          z-index: 2
+        &:nth-child(10)
+          position: absolute
+          top: 78%
+          left: 6%
+          width: 18%
+          z-index: 2
+        &:nth-child(11)
+          position: absolute
+          top: 53%
+          width: 33%
+          left: 22%
+          transform: rotate(90deg)
+          z-index: 1
+        &:nth-child(12)
+          position: absolute
+          top: 59%
+          left: -7%
+          width: 31%
+          transform: rotate(90deg)
+        &:nth-child(13)
+          position: absolute
+          top: 107%
+          width: 15%
+          left: 11%
+          z-index: 1
+        &:nth-child(14)
+          position: absolute
+          top: 81%
+          left: -11%
+          transform: rotate(90deg)
+          width: 16%
+        &:nth-child(15)
+          position: absolute
+          top: 60%
+          left: 1%
+          width: 29%
+          transform: rotate(90deg)
+        &:nth-child(16)
+          position: absolute
+          top: 30%
+          width: 18%
+          left: -9%
+          z-index: 1
+          transform: rotate(90deg)
+        &:nth-child(17)
+          position: absolute
+          top: 76%
+          width: 15%
+          left: 28%
+          z-index: 1
+        &:nth-child(18)
+          position: absolute
+          top: 83%
+          left: 13%
+          width: 30%
+          padding-bottom: 37%
+        
+        
+        img
+          width: 80%
+          transition: .4s
+          position: absolute
+          border-radius: 5%
+          z-index: 5
+          &:hover
+            transform: translate(0%,-12%) rotate(0deg)
+            transition: .4s
+            
+
+    
+    
+.sayPeople
+  height: 100%
+  width: 100%
+  color: #00d2ff
+  background: black
+  position: relative
+
+  .round
+    width: 1.9%
+    height: 22%
+    position: absolute
+    top: -4%
+    background: #00d2ff
+    right: 41%
+    border-radius: 50px
+    opacity: 0
+    transition: 1s
+
+  .roundBlur
+    width: 2.8%
+    height: 24%
+    position: absolute
+    top: -4.1%
+    background: #00d2ff
+    right: 40.5%
+    border-radius: 50px
+    filter: blur(30px) brightness(1.5)
+    opacity: 0
+    transition: 1s
+
+  .footText
+    font-size: 100px
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: OswaldBold
+    letter-spacing: 9.9px
+    padding: 2.8% 0%
+    transition: 1s
+
+.middleFooter
+  width: 100%
+  height: 100%
+  background: #000125
+  
+  .rangeTable
+    padding-bottom: 2.1%
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    
+    #triangleLeft
+      margin: 0% 1%
+      color: #00d2ff
+      font-size: 50px
+      transition: 0.2s
+      transform: scaleX(2)
+      &:hover
+        text-shadow: 0px 0px 1vh #8ed0ff!important
+    .rangeInput
+      width: 44%
+      appearance: none
+      display: block
+      background: #3e006194
+      outline: 0
+      
+      &::-webkit-slider-thumb 
+        appearance: none
+        width: 12%
+        height: 0.7vh
+        background: #00d2ff
+        box-shadow: 0 0 25px #8ed0ff,0px 0px 10px #8ed0ff
+        transition: all .5s
+        border-radius: 18%
+        
+    
+    #triangleRight
+      margin: 0% 1%
+      color: #00d2ff
+      font-size: 50px
+      transition: 0.2s
+      transform: scaleX(2)
+      &:hover
+        text-shadow: 0px 0px 1vh #8ed0ff!important
+  .tableComments
+    overflow: hidden
+    position: relative
+    padding-bottom: 8%
+    justify-content: center
+    width: 80%
+    margin: auto
+    left: -2%
+    
+  .widthComments
+    width: 484%
+    margin: auto
+    display: flex
+    position: relative
+    left: -180%
+    transition: 1s
+    
+    .scaleUp
+      transform: scale(1.5)!important
+      transition: all 0.9s
+      opacity: 0.9!important
+      
+
+    .scaleDown
+      transform: scale(0.9)
+      transition: transform 0.9s
+      
+      
+    .tableOne
+      padding: 2.1% 0
+      background-color: #29284a8a
+      margin: 2.5% 4% 0 0
+      position: relative
+      transform: scale(0.9)
+      box-shadow: 0 0 10px 11px #00a9fb38
+      border-radius: 5%
+      width: 100%
+      height: 100%
+      opacity: 0.5
+
+      .elip1
+        position: absolute
+        top: -17%
+        left: 29%
+        width: 37%
+      
+      svg
+        position: absolute
+        left: 20%
+        bottom: -15%
+      
+      span
+        width: 100%
+        position: absolute
+        bottom: 15%
+        font-family: RobotoBold
+        color: #a7ffff
+        font-size: 29px
+        display: flex
+        justify-content: center
+
+      .quotes
+        position: absolute
+        width: 15%
+        top: 7%
+        left: -4%
+      
+      .quotesTwo
+        position: absolute
+        width: 15%
+        bottom: 17%
+        right: -4%
+        transform: rotate(180deg)
+
+
+      .loremOne
+        font-size: 29px
+        line-height: 40px
+        color: #e0ffff
+        letter-spacing: 1px
+        text-align: center
+        font-family: RobotoBold
+        position: relative
+        top: 180%
+        width: 160%
+        left: -30%
+        
+    
+.contact
+  height: 100%
+  width: 100%
+  background: #0028bf
+  position: relative
+
+  .contText
+    font-size: 87.19px
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: OswaldBold
+    letter-spacing: 11.1px
+    color: white
+    padding: 1.8% 0%
+
+.bottomFooter
+  width: 100%
+  height: 100%
+  background: url("../Img/footer/end.png")
+  overflow: hidden
+  position: relative
+  background-size: cover
+  padding-bottom: 5.1%
+
+  .areaFooter
+    width: 25.1%
+    height: 100%
+    padding-bottom: 2%
+    margin: 3.7% 0 0 7%
+    display: flex
+    flex-direction: column
+    background-image: url(../img/footer/form.png)
+    background-size: cover
+    
+    div
+      border-bottom: 1px solid #026dcc
+
+    .name
+      margin: 10% 0 0 5%
+      font-size: 50px
+      width: 89%
+      letter-spacing: 5px
+      opacity: .7
+      color: #fff
+      border-bottom: 2px solid #0770cb
+
+      input
+        font-size: 50px
+        width: 100%
+        letter-spacing: 5px
+        background: transparent
+        opacity: 0.7
+        color: white
+        border: none
+        padding-bottom: 1%
+
+        &::placeholder
+          color: white
+          font-family: RobotoLight
+
+    .surname
+      margin: 3% 0 0 5%
+      font-size: 50px
+      width: 89%
+      letter-spacing: 5px
+      opacity: 0.7
+      color: white
+      border-bottom: 2px solid #0770cb
+
+      input
+        font-size: 50px
+        width: 100%
+        letter-spacing: 5px
+        background: transparent
+        opacity: 0.7
+        color: white
+        border: none
+        padding-bottom: 1%
+
+        &::placeholder
+          color: white
+          font-family: RobotoLight
+
+    .mail
+      margin: 3% 0 0 5%
+      font-size: 50px
+      width: 89%
+      letter-spacing: 5px
+      opacity: 0.7
+      color: white
+      border-bottom: 2px solid #0770cb
+
+      input
+        font-size: 50px
+        width: 100%
+        letter-spacing: 5px
+        background: transparent
+        opacity: 0.7
+        color: white
+        border: none
+        padding-bottom: 1%
+
+        &::placeholder
+          color: white
+          font-family: RobotoLight
+
+    .textArea
+      margin: 7% 0 0 6%
+      font-size: 50px
+      width: 86%
+      font-size: 3vh
+      letter-spacing: 3px
+      height: 312px
+      background: #1775d2
+      opacity: 0.7
+      color: white
+      border: 1px solid #0046c1
+      resize: none
+
+      input::placeholder
+        color: white
+
+    button
+      margin: 9.3% 0 0 29%
+      width: 41.2%
+      padding: 3% 0
+      font-size: 50px
+      border: 0
+      border-radius: 70px
+      background: #fb8b2e
+      letter-spacing: 3px
+      font-family: RobotoBlack
+      color: white
+      box-shadow: 0px 0px 45px #fb8b2e
+
+  .ellend
+    position: absolute
+    top: 16.3%
+    right: 16%
+    width: 36%
+
+  .footBlore
+    width: 8%
+    height: 22%
+    position: absolute
+    top: 40%
+    right: 29.5%
+    filter: blur(60px) brightness(0.7)
+    background: #00ffff
+  .strik
+    position: absolute
+    top: 3.7%
+    right: 15.6%
+    width: 36.7%
+
+.copyright
+  width: 100%
+  height: 100%
+  background: black
+  color: #5c6f7a
+  display: flex
+  justify-content: center
+  span
+    padding: 2.5% 0.3%
+    font-size: 36px
+    font-family: RobotoBold
+    letter-spacing: 0.06vw
+
+@import "_media"
